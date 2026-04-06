@@ -1,7 +1,7 @@
 {
     "name": "sofyco/translation-bundle",
     "type": "symfony-bundle",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Symfony Translation Bundle",
     "keywords": ["php", "symfony", "translation", "locale", "loader"],
     "homepage": "https://github.com/sofyco/translation-bundle",
