@@ -9,5 +9,5 @@ interface TranslationRepositoryInterface
     /**
      * @return TranslationInterface[]
      */
-    public function findByLocaleAndDomain(string $locale, string $domain): array;
+    public function findByLocaleAndDomain(string $locale, string $domain): iterable;
 }
