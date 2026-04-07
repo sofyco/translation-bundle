@@ -12,27 +12,13 @@ final class DatabaseLoaderTest extends TestCase
     public function testLoadReturnsCatalogueWithTranslationsFromRepository(): void
     {
         $translationOne = new class () implements TranslationInterface {
-            public function getKey(): string
-            {
-                return 'greeting';
-            }
-
-            public function getValue(): string
-            {
-                return 'Hello';
-            }
+            public string $key = 'greeting';
+            public string $value = 'Hello';
         };
 
         $translationTwo = new class () implements TranslationInterface {
-            public function getKey(): string
-            {
-                return 'farewell';
-            }
-
-            public function getValue(): string
-            {
-                return 'Good bye';
-            }
+            public string $key = 'farewell';
+            public string $value = 'Good bye';
         };
 
         $repository = $this->createMock(TranslationRepositoryInterface::class);

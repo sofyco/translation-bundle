@@ -25,7 +25,7 @@ final readonly class DatabaseLoader implements LoaderInterface
         $messages = [];
 
         foreach ($translations as $translation) {
-            $messages[$domain][$translation->getKey()] = $translation->getValue();
+            $messages[$domain][$translation->key] = $translation->value;
         }
 
         return new MessageCatalogue(locale: $locale, messages: $messages);

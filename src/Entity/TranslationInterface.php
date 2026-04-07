@@ -4,7 +4,11 @@ namespace Sofyco\Bundle\TranslationBundle\Entity;
 
 interface TranslationInterface
 {
-    public function getKey(): string;
+    public string $key {
+        get;
+    }
 
-    public function getValue(): string;
+    public string $value {
+        get;
+    }
 }
